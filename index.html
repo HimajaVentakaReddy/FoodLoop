@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7ef">
+  <meta name="description" content="FoodLoop connects campus kitchens and student volunteers to rescue surplus food before it goes to waste.">
+  <title>FoodLoop — Campus Food Rescue Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="FoodLoop home">
+        <span class="brand-mark">🌱</span>
+        <span class="brand-copy">FoodLoop</span>
+      </a>
+      <span class="brand-tag">Campus Food Rescue Network</span>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#food-board">Live Board</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#impact">Impact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="demo-button" id="demoButton" type="button" aria-label="Reset the demo board">Demo</button>
+        <a class="button button-primary nav-post" href="#post-food">Post Surplus <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-a"></div><div class="hero-glow hero-glow-b"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> Live Campus Network</div>
+          <h1>Surplus food.<br><span>Smarter rescue.</span></h1>
+          <p>FoodLoop helps campus kitchens rescue surplus food through real-time urgency prioritization and faster volunteer coordination.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-large" href="#food-board">Explore Live Board <span>→</span></a>
+            <a class="button button-light button-large" href="#post-food">Post Surplus Food</a>
+          </div>
+          <div class="hero-proof"><span class="proof-avatars" aria-hidden="true"><i data-lucide="utensils"></i><i data-lucide="users"></i><i data-lucide="leaf"></i></span><span>Real-time response for campus kitchens and volunteers.<br><strong>Built for less waste, more care.</strong></span></div>
+        </div>
+        <div class="hero-journey" aria-label="Food rescue journey dashboard">
+          <div class="smart-priority-card">
+            <div class="priority-header">
+              <div class="priority-engine-label"><span class="engine-pulse"></span> Smart Priority Engine</div>
+              <div class="priority-score-wrap">
+                <span class="score-label">Priority Score</span>
+                <div class="score-value"><strong>92</strong><span>/100</span></div>
+              </div>
+            </div>
+            <div class="priority-status"><span class="status-indicator"></span> CRITICAL</div>
+            <div class="priority-breakdown">
+              <div class="priority-factor">
+                <span class="factor-icon"><i data-lucide="clock-3"></i></span>
+                <div><small>Time Remaining</small><strong>15 minutes</strong></div>
+              </div>
+              <div class="priority-factor">
+                <span class="factor-icon"><i data-lucide="utensils-crossed"></i></span>
+                <div><small>Meals Available</small><strong>40 servings</strong></div>
+              </div>
+              <div class="priority-factor">
+                <span class="factor-icon"><i data-lucide="map-pin"></i></span>
+                <div><small>Pickup Distance</small><strong>Campus Hostel</strong></div>
+              </div>
+            </div>
+            <div class="priority-bar" aria-label="Priority score">
+              <span style="width: 92%"></span>
+            </div>
+            <p class="priority-caption">Priority is calculated from collection urgency and available food quantity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-curve"></div>
+    </section>
+
+    <section class="how-section section-pad" id="how-it-works">
+      <div class="container how-wrap">
+        <div class="section-heading centered-heading">
+          <span class="section-kicker">FROM SURPLUS TO SUPPORT</span>
+          <h2>From surplus to support.</h2>
+          <p>A simple flow designed to reduce food waste before it becomes waste.</p>
+        </div>
+        <div class="how-grid">
+          <article class="how-card">
+            <span class="how-step">01</span>
+            <div class="how-icon"><i data-lucide="utensils" aria-hidden="true"></i></div>
+            <h3>Post</h3>
+            <p>Campus kitchens share surplus food before it loses freshness.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-step">02</span>
+            <div class="how-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Prioritize</h3>
+            <p>FoodLoop calculates urgency based on urgency, quantity, and timing.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-step">03</span>
+            <div class="how-icon"><i data-lucide="users" aria-hidden="true"></i></div>
+            <h3>Match</h3>
+            <p>Volunteers find and reserve available food with clear pickup timing.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-step">04</span>
+            <div class="how-icon"><i data-lucide="heart" aria-hidden="true"></i></div>
+            <h3>Rescue</h3>
+            <p>Surplus food reaches students instead of becoming waste.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker-section" aria-label="Campus activity">
+      <div class="container ticker-wrap"><span class="ticker-live"><i></i> LIVE NOW</span><div class="ticker-window"><div class="ticker-message" id="tickerMessage" aria-live="polite"></div></div><span class="ticker-status">CAMPUS NETWORK <b>●</b></span></div>
+    </section>
+
+    <section class="impact-strip container" aria-label="Live FoodLoop impact">
+      <article class="impact-metric"><span class="metric-icon">🍽️</span><div><strong id="mealsAvailable">0</strong><small>Meals Rescued</small></div><span class="metric-live">LIVE</span></article>
+      <article class="impact-metric"><span class="metric-icon claims-icon">🤝</span><div><strong id="claimsCount">0</strong><small>Successful Claims</small></div><span class="metric-live">LIVE</span></article>
+      <article class="impact-metric"><span class="metric-icon listings-icon">🌱</span><div><strong id="activeListings">0</strong><small>Active Listings</small></div><span class="metric-live">LIVE</span></article>
+      <article class="impact-metric"><span class="metric-icon waste-icon">♻️</span><div><strong id="wastePrevented">0 kg</strong><small>Estimated Waste Prevented</small></div><span class="metric-live">EST.</span></article>
+    </section>
+
+    <section class="board-section section-pad" id="food-board">
+      <div class="container">
+        <div class="section-heading board-heading">
+          <div><span class="section-kicker">The Live Rescue Board</span><h2>Live rescue board</h2><p>Prioritized by urgency so the food that needs attention first is always visible.</p></div>
+          <div class="board-actions"><button class="button button-undo" id="undoButton" type="button" disabled><span>↩</span> Undo <span class="undo-count" id="undoCount">History: 0/5</span></button><button class="priority-help" type="button" title="High priority food should be collected first. Priority is based on time remaining." aria-label="Priority guide: high priority food should be collected first.">● LIVE</button></div>
+        </div>
+        <div class="board-toolbar">
+          <label class="search-box" for="searchInput"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search food or campus location…" autocomplete="off"></label>
+          <div class="filter-group" role="group" aria-label="Filter food listings">
+            <button type="button" class="filter-button active" data-filter="all">📋 All <span id="allCount">0</span></button>
+            <button type="button" class="filter-button" data-filter="urgent">🔥 Urgent <span id="urgentCount">0</span></button>
+            <button type="button" class="filter-button" data-filter="available">🟢 Available <span id="availableCount">0</span></button>
+            <button type="button" class="filter-button" data-filter="claimed">🤝 Claimed <span id="claimedCount">0</span></button>
+            <button type="button" class="filter-button" data-filter="expired">⏰ Expired <span id="expiredCount">0</span></button>
+          </div>
+        </div>
+        <div class="food-grid" id="foodGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="network-section section-pad" id="campus-network">
+      <div class="container network-layout">
+        <div class="network-copy"><span class="section-kicker">GOOD FOOD, AROUND THE CORNER</span><h2>One campus.<br><span>Connected for good.</span></h2><p>From the hostel kitchen to the student hub, every campus location can be part of the rescue network.</p><div class="network-key"><span><i class="key-active"></i> Active food listed</span><span><i class="key-ready"></i> Ready to share</span></div></div>
+        <div class="campus-map" aria-label="Illustrated campus rescue network">
+          <svg class="map-lines" viewBox="0 0 600 390" role="presentation" aria-hidden="true"><path d="M300 190 C230 170 170 100 115 78"/><path d="M310 190 C385 160 440 110 490 82"/><path d="M290 202 C225 235 175 288 125 315"/><path d="M310 204 C380 240 430 285 485 312"/></svg>
+          <div class="map-hub"><span>🌱</span><strong>FOODLOOP</strong><small>RESCUE HUB</small></div>
+          <div class="map-place place-a" data-place="Hostel Block A"><span class="place-icon">🏠</span><div><strong>Hostel Block A</strong><small>Mess kitchen</small><b class="place-status">Ready to share</b></div></div>
+          <div class="map-place place-b" data-place="Main Canteen"><span class="place-icon">🍽️</span><div><strong>Main Canteen</strong><small>Campus dining</small><b class="place-status">Ready to share</b></div></div>
+          <div class="map-place place-c" data-place="Campus Café"><span class="place-icon">☕</span><div><strong>Campus Café</strong><small>Fresh every day</small><b class="place-status">Ready to share</b></div></div>
+          <div class="map-place place-d" data-place="Student Activity Center"><span class="place-icon">📍</span><div><strong>Student Activity Center</strong><small>Community pickup</small><b class="place-status">Ready to share</b></div></div>
+          <span class="map-leaf map-leaf-a">🍃</span><span class="map-leaf map-leaf-b">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="post-section section-pad" id="post-food">
+      <div class="container post-layout">
+        <div class="post-intro">
+          <span class="section-kicker">TURN EXTRA INTO ENOUGH</span>
+          <h2>Good food<br><span>should go further.</span></h2>
+          <p>One quick post helps volunteers find surplus while it’s still fresh. Share the details and put a meal back in circulation.</p>
+          <div class="post-promise"><span>💚</span><p><strong>Only safe, freshly prepared surplus.</strong><br>Please follow your campus food safety guidelines.</p></div>
+          <div class="post-safety">⚠️ FoodLoop facilitates redistribution and does not guarantee food safety. Providers are responsible for safe handling.</div>
+        </div>
+        <form class="post-form" id="foodForm">
+          <div class="form-heading"><div class="form-icon">🍛</div><div><h3>List surplus food</h3><p>It takes less than a minute.</p></div><span class="form-step">01 / SHARE</span></div>
+          <div class="form-grid">
+            <label class="form-field full-field"><span>Food name <b>*</b></span><input name="name" type="text" placeholder="e.g. Vegetable rice & dal" maxlength="60" required autocomplete="off"></label>
+            <label class="form-field full-field"><span>Campus location <b>*</b></span><input name="location" type="text" list="campusLocations" placeholder="e.g. Main Canteen" maxlength="80" required autocomplete="off"><datalist id="campusLocations"><option value="Hostel Block A"><option value="Hostel Block B"><option value="Main Hostel Mess"><option value="Main Canteen"><option value="Campus Café"><option value="Student Activity Center"></datalist></label>
+            <label class="form-field"><span>Number of servings <b>*</b></span><input name="servings" type="number" min="1" step="1" placeholder="e.g. 30" required></label>
+            <label class="form-field"><span>Available until <b>*</b></span><input name="expiresAt" id="expiresInput" type="datetime-local" required></label>
+            <label class="form-field"><span>Food category</span><select name="category"><option value="Meal">🍱 Meal</option><option value="Snack">🥪 Snack</option><option value="Produce">🥗 Produce</option><option value="Bakery">🍞 Bakery</option><option value="Drinks">🥤 Drinks</option><option value="Other">🍽️ Other</option></select></label>
+            <label class="form-field"><span>Food type</span><select name="foodType"><option value="Vegetarian">🥬 Vegetarian</option><option value="Vegan">🌿 Vegan</option><option value="Contains meat">🍗 Contains meat</option><option value="Other">🍽️ Other</option></select></label>
+            <label class="form-field full-field"><span>Additional notes <small>(optional)</small></span><textarea name="description" rows="3" maxlength="180" placeholder="Packaging, pickup instructions, allergens…"></textarea></label>
+          </div>
+          <button class="button button-primary submit-button" type="submit">🌱 Post to Live Board <span>→</span></button>
+          <p class="form-footnote">A small share can make a big difference. ✨</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="story-section section-pad">
+      <div class="container">
+        <div class="section-heading centered-heading"><span class="section-kicker">FROM EXTRA TO IMPACT</span><h2>A small journey. <span>A meaningful rescue.</span></h2><p>Surplus moves quickly from detection to a meal shared.</p></div>
+        <div class="story-steps">
+          <article class="story-step"><span class="story-count">01</span><div class="story-icon"><i data-lucide="utensils"></i></div><span class="story-label">SURPLUS DETECTED</span><h3>Kitchen spots extra</h3><p>A mess or canteen identifies freshly prepared food that can be shared.</p></article>
+          <article class="story-step"><span class="story-count">02</span><div class="story-icon"><i data-lucide="send"></i></div><span class="story-label">FOOD POSTED</span><h3>Listing goes live</h3><p>Food appears on the board with its location and time remaining.</p></article>
+          <article class="story-step"><span class="story-count">03</span><div class="story-icon"><i data-lucide="user-check"></i></div><span class="story-label">VOLUNTEER MATCHED</span><h3>Someone steps up</h3><p>A student claims the listing and shares an estimated arrival time.</p></article>
+          <article class="story-step"><span class="story-count">04</span><div class="story-icon"><i data-lucide="heart-handshake"></i></div><span class="story-label">FOOD RESCUED</span><h3>A meal finds a home</h3><p>Good food gets collected and redistributed before it spoils.</p></article>
+          <div class="story-connector" aria-hidden="true"><span>→</span><span>→</span><span>→</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-section">
+      <div class="container activity-layout">
+        <div class="activity-heading"><span class="section-kicker">THE GOOD KEEPS MOVING</span><h2>📜 Recent activity</h2><p>Small actions, making a visible difference.</p></div>
+        <ol class="activity-list" id="activityList" aria-live="polite"></ol>
+      </div>
+    </section>
+
+    <section class="impact-section section-pad" id="impact">
+      <div class="container impact-panel">
+        <div class="impact-copy"><span class="section-kicker">A BETTER CAMPUS, BY THE MEAL</span><h2>Every rescue is<br><span>a reason for hope.</span></h2><p>When we share what’s already been made, we make better use of resources and build a campus community that cares.</p><div class="impact-carbon"><span>🌍</span><div><strong id="co2Estimate">0 kg</strong><small>Estimated CO₂-equivalent impact*</small></div></div><small class="estimate-note">*Illustrative prototype estimate based on rescued meals. Not a scientific measurement.</small></div>
+        <div class="impact-dashboard">
+          <div class="impact-dashboard-head"><span>🌿 CAMPUS IMPACT</span><span class="impact-period"><i></i> LIVE ESTIMATE</span></div>
+          <div class="impact-total"><strong id="impactMeals">0</strong><span>meals rescued</span></div>
+          <div class="impact-bar" role="progressbar" aria-label="Rescued meals toward a 250 meal campus goal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="impactProgress"></span></div><div class="impact-bar-label"><span>Shared this campus</span><strong id="impactClaims">0 claims</strong></div>
+          <div class="impact-mini-grid"><div><span>♻️</span><strong id="impactWaste">0 kg</strong><small>Waste prevented*</small></div><div><span>🌱</span><strong id="impactActive">0</strong><small>Meals waiting</small></div></div>
+          <div class="impact-note">“The most sustainable meal is the one we don’t waste.”</div>
+        </div>
+        <span class="impact-decoration decor-leaf">🍃</span><span class="impact-decoration decor-spark">✦</span>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <div class="container why-layout">
+        <div class="why-heading"><span class="section-kicker">WHY FOODLOOP?</span><h2>Better together,<br><span>by design.</span></h2></div>
+        <article class="why-card"><div class="why-icon waste-why">♻️</div><h3>Reduce Waste</h3><p>Turn surplus into support before good food is lost.</p></article>
+        <article class="why-card"><div class="why-icon speed-why">⚡</div><h3>Act Fast</h3><p>Live countdowns and priority help volunteers move quickly.</p></article>
+        <article class="why-card"><div class="why-icon community-why">🤝</div><h3>Build Community</h3><p>Bring campus kitchens and student volunteers closer.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><a class="brand footer-brand" href="#home"><span class="brand-mark">🌱</span><span>Food<span>Loop</span></span></a><p>Share Surplus <span>•</span> Save Food <span>•</span> Support Communities</p><span class="footer-note">Built for a Sustainable Future 🌍</span></div></footer>
+
+  <dialog class="claim-dialog" id="claimDialog" aria-labelledby="claimTitle">
+    <button class="modal-close" id="closeClaim" type="button" aria-label="Close claim dialog">×</button>
+    <div id="claimFormView">
+      <div class="modal-icon">🤝</div><span class="section-kicker">MAKE THIS RESCUE HAPPEN</span><h2 id="claimTitle">Claim this food</h2><p class="modal-intro" id="claimFoodSummary">Tell the provider who's coming to collect.</p>
+      <form id="claimForm">
+        <label class="form-field"><span>Volunteer name <b>*</b></span><input name="volunteerName" type="text" maxlength="50" placeholder="Your name" required autocomplete="name"></label>
+        <label class="form-field"><span>Estimated arrival <b>*</b></span><select name="arrivalTime" required><option value="">Choose an arrival window</option><option value="In 10 minutes">In 10 minutes</option><option value="In 20 minutes">In 20 minutes</option><option value="In 30 minutes">In 30 minutes</option><option value="In 45 minutes">In 45 minutes</option><option value="In 1 hour">In 1 hour</option></select></label>
+        <label class="form-field"><span>Contact number <small>(optional)</small></span><input name="contact" type="tel" maxlength="20" placeholder="For pickup coordination" autocomplete="tel"></label>
+        <button class="button button-primary submit-button" type="submit">🚀 Confirm Rescue <span>→</span></button>
+        <p class="form-footnote">Only the food provider needs your pickup details.</p>
+      </form>
+    </div>
+    <div id="claimSuccessView" hidden>
+      <div class="success-burst">🎉</div><span class="section-kicker">ONE LESS MEAL WASTED</span><h2>Rescue confirmed!</h2><p class="modal-intro">Thank you for rescuing food that might otherwise have gone to waste.</p>
+      <div class="rescue-receipt" id="rescueReceipt"></div>
+      <button class="button button-primary submit-button" id="closeSuccess" type="button">Done, thank you 💚</button>
+    </div>
+  </dialog>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
