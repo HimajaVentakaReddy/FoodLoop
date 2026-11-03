@@ -52,6 +52,13 @@ Food listings receive priority based on their remaining collection time. This he
 
 FoodLoop aims to encourage responsible food redistribution and build a more sustainable campus community.
 
+## 🔮 Future Enhancements
+
+- Spring Boot backend
+- MySQL database
+- Volunteer authentication
+- Real-time notifications
+- Campus location integration
 
 ---
 
