@@ -1244,3 +1244,63 @@ textarea {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* FoodLoop rescue journey */
+.rescue-journey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 20px;
+  border: 1px solid rgba(55, 120, 80, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.journey-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #345b43;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.journey-dot {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e3f1e5;
+  color: #28643b;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.journey-line {
+  width: 35px;
+  height: 2px;
+  flex-shrink: 1;
+  background: #a9cbb0;
+}
+
+@media (max-width: 650px) {
+  .rescue-journey {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .journey-line {
+    display: none;
+  }
+
+  .journey-item {
+    width: calc(50% - 10px);
+    white-space: normal;
+  }
+}
